@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&family=Nunito&display=swap');
+
 body, html {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  font-family: sans-serif;
+  font-family: 'Nunito';
 }
 
 .fixed-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -16,8 +19,22 @@ body, html {
 	display: block;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#proggresBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  border-radius:0 0 10px 10px;
+  background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+  z-index: 1;
+}
+
 main {
-  box-shadow: 20px 0 0 0 black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 header {
@@ -27,6 +44,8 @@ header {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 h2 {
@@ -56,6 +75,7 @@ h3 {
   margin: 0;
   color: white;
   font-size: 60px;
+  font-family: 'Comfortaa';
   text-align: center;
   padding-top: 400px;
 }
@@ -106,15 +126,16 @@ h3 {
   display: inline;
   float: left;
   width: 460px;
-  font-size: 25px;
+  margin-right: 160px;
+  font-size: 22px;
   margin-top: 15px;
 }
 
 .neural-net_description2{
   display: inline;
-  float: right;
-  width: 460px;
-  font-size: 25px;
+  float: left;
+  width: 480px;
+  font-size: 22px;
   margin-top: 15px;
 }
 
@@ -128,6 +149,7 @@ h3 {
   background-color: black;
   text-align: center;
   transition: 0.25s;
+  margin-bottom: 120px;
 }
 
 .next-button:hover {
@@ -141,20 +163,42 @@ h3 {
   margin: 0 auto;
 }
 
-.neuralExamples {
-  padding-top: 130px;
-}
-
 .examplesList {
-padding-top: 20px;
+ padding-top: 20px;
  list-style-type: none;
 }
 
 .example_list-item {
   display: inline-block;
-  margin-right: 150px;
+  margin-right: 30px;
+}
+
+.neuralExamples{
+  padding-bottom: 50px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+
+.example_list-item:nth-child(3)
+{
+  margin-right: 0;
 }
 
 .exampleDesc {
-  width: 150px;
+  width: 300px;
+}
+
+.exampleName {
+  margin-bottom: 8px;
+}
+
+.exampleImgDown {
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.exampleImgUp {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
 }
