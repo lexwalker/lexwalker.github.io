@@ -6,19 +6,10 @@ function slowScroll(id) {
   return false;
 }
 
-// <script>
-// $(window).scroll(function(){
-//   var scroll = $(window).scrollTop(),
-//   dh = $(document).height(),
-//   wh = $(window).height();
-//   scrollPercent = (scroll / (dh - wh)) * 100;
-//   $('#proggresBar').css('height', scrollPercent + '%');
-// })
-// </script>
-
-let proggres = document.getElementById('proggresBar');
-let totalHeight = document.body.scrollHeight - window.innerHeight;
-window.onscroll = function(){
-  let progressHeight = (window.pageYOffset / totalheight) * 100;
-  progress.style.height = progresHeight + "%";
-}
+ $(window).scroll(function(){
+   var scroll = $(window).scrollTop(),
+   dh = $(document).height(),
+   wh = $(window).height();
+  scrollPercent = (scroll / (dh - wh)) * 100;
+   $('#proggresBar').css('height', scrollPercent + '%');
+ })
