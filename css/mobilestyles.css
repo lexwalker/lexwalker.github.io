@@ -1,9 +1,22 @@
-@media (min-width: 320px) and (max-width: 720px) {
+@media (min-width: 320px) and (max-width: 480px) {
   header{
     height: 1000px;
   }
+  ul{
+    margin: 0;
+    padding: 5px;
+  }
+
+  #proggresBar {
+    display: none;
+  }
+
+  #scrollPath{
+    display: none;
+  }
 
   .header_title {
+    font-size: 40px;
     padding-top: 250px;
   }
 
@@ -27,7 +40,7 @@
     float: none;
     width: auto;
     margin-right: 0;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
   }
 
@@ -38,7 +51,7 @@
     float: none;
     width: auto;
     margin-right: 0;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
   }
 
@@ -55,8 +68,14 @@
     margin-bottom: 120px;
   }
 
-  .exampleName{
+  .exampleName {
     margin-top: 10px;
+  }
+
+  .example_list-item {
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
   }
 
   .neuralExamples .next-button {
