@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="javascript/jquery-3.5.0.min.js"></script>
+    <script src="javascript/wow.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+      <title>neuralnetwork</title>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+    <header>
+      <div class="fixed-container">
+        <h1 class="header_title">Нейронные сети и их<br> применение</h1>
+        <button type="button" class="header_button" name="button" onclick="slowScroll('#block1')">Узнать сейчас</button>
+      </div>
+    </header>
+    <main>
+      <div class="fixed-container">
+          <h2 class="wow fadeIn">
+            <span class="red-text" id="block1">Что такое</span>
+            <span class="neural-title">НЕЙРОННЫЕ СЕТИ</span>
+         </h2>
+        <div class="whatIsNeuralNet clearfix">
+          <div class="neural-net_description1 wow fadeInLeft">Нейронная сеть — это последовательность нейронов, соединенных между собой синапсами. Структура нейронной сети пришла в мир программирования прямиком из биологии. Благодаря такой структуре, машина обретает способность анализировать и даже запоминать различную информацию. Нейронные сети также способны не только анализировать входящую информацию, но и воспроизводить ее из своей памяти.</div>
+          <div class="neural-net_description2 wow fadeInRight">Нейронная сеть представляет собой последовательность связанных нейронов.
+          Нейроны — единицы, получающие и передающие информацию. Сами по себе они не играют важной роли: нейроны имеют значение только в выстроенной из них цепи.
+          К нейрону поступают входящие сигналы, каждому из которых присвоен определенный вес. Сигнал умножается на свой вес, значения суммируются, и получается единое число, которое получает активационная функция.</div>
+
+        </div>
+        <button class="next-button wow fadeInUp" type="button" name="button" onClick="">
+        <img src="img/arrow.png" class="arrow-img" alt="">
+        </button>
+        <div class="neuralExamples">
+          <h2 class="wow fadeIn">
+            <span class="red-text">примеры</span>
+            <span class="neural-title">НЕЙРОННЫХ СЕТЕЙ</span>
+          </h2>
+          <ul class="examplesList">
+            <li class="example_list-item">
+              <h3>Яндекс.Алиса</h3>
+              <div class="exampleDesc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <img src="" alt="Alisa">
+            </li>
+            <li class="example_list-item">
+              <h3>ThisPersonDoesNotExist</h3>
+              <div class="exampleDesc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <img src="" alt="Alisa">
+            </li>
+            <li class="example_list-item">
+              <h3></h3>
+              <div class="exampleDesc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <img src="" alt="Alisa">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-container").fadeOut(2000);
+        })
+    </script>
+  </body>
+</html>
