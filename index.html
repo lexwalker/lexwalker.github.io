@@ -5,12 +5,14 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/mobilestyles.css">
     <script src="javascript/jquery-3.5.0.min.js"></script>
     <script src="javascript/wow.min.js"></script>
     <script src="javascript/script.js"></script>
     <script type="text/javascript">
       new WOW().init();
     </script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>neuralnetwork</title>
   </head>
   <body>
@@ -18,6 +20,7 @@
       <div class="loader"></div>
     </div>
     <div id="proggresBar"></div>
+    <div id="scrollPath"></div>
     <header>
       <div class="fixed-container">
         <h1 class="header_title">Нейронные сети и их<br> применение</h1>
@@ -43,6 +46,8 @@
       </div>
         <div class="neuralExamples" id="neuralExample">
           <div class="fixed-container">
+            <!-- <span class="brain-background"></span>
+            <span class="neurons-background"></span> -->
             <h2 class="wow fadeIn">
               <span class="red-text">примеры</span>
               <span class="neural-title">НЕЙРОННЫХ СЕТЕЙ</span>
@@ -56,11 +61,11 @@
                 <img class="exampleImgDown" src="img/yandex.png" alt="Alisa">
               </li>
               <li class="example_list-item wow fadeIn">
-                <img  class="exampleImgUp" src="img/persondoesntexist.jpg" alt="ThisPersonDoesNotExist">
                 <h3 class="exampleName">ThisPersonDoesNotExist</h3>
                 <div class="exampleDesc">
                   Нейросеть StyleGAN, создающая на сайте реалистичные изображения людей, которых на самом деле не существует, состоит из двух частей. Одна часть генерирует лица, а вторая часть постоянно оценивает, выглядят ли эти лица поддельными.
                 </div>
+                <img  class="exampleImgDown" src="img/persondoesntexist.jpg" alt="ThisPersonDoesNotExist">
               </li>
               <li class="example_list-item wow fadeInRight">
                 <h3 class="exampleName">Speech2Face</h3>
@@ -92,15 +97,6 @@
         $(window).on("load",function(){
           $(".loader-container").fadeOut(2000);
         })
-    </script>
-    <script>
-    $(window).scroll(function(){
-      var scroll = $(window).scrollTop(),
-      dh = $(document).height(),
-      wh = $(window).height();
-      scrollPercent = (scroll / (dh - wh)) * 100;
-      $('#proggresBar').css('height', scrollPercent + '%');
-    })
     </script>
   </body>
 </html>
