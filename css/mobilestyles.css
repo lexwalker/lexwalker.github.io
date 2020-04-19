@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 900px) {
   header{
     height: 1000px;
   }
@@ -73,9 +73,21 @@
   }
 
   .example_list-item {
-    margin: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
     padding: 0;
     padding-left: 5px;
+  }
+
+  .exampleDesc {
+    margin: 0 auto;
+  }
+
+  .example_list-item:nth-child(3)
+  {
+    display: block;
+    margin-right: 0;
   }
 
   .neuralExamples .next-button {
