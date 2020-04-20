@@ -9,7 +9,7 @@ body, html {
 }
 
 .fixed-container {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -84,6 +84,11 @@ h2 {
 }
 
 h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
 }
@@ -216,7 +221,10 @@ h3 {
 
 .example_list-item {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
+  border: 2px solid #353b48;
+  box-shadow: 10px 10px 1px 1px rgba(0,0,0,0.2);
+  padding: 20px;
 }
 
 .neuralExamples{
